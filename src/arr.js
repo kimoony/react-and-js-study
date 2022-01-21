@@ -15,4 +15,4 @@ arr.push(6);
 // console.log(arr[4]);
 
 // 배열의 길이
-console.log(arr.length);
+// console.log(arr.length);
