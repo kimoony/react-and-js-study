@@ -26,4 +26,34 @@
 let score = 100;
 
 const result = score >= 90 ? "A+" : score >= 50 ? "B+" : "F";
-console.log(result);
+// console.log(result);
+
+function isKoreanFood(food) {
+  // if (food === "불고기" || food === "떡볶이" || food === "비빔밥") {
+  if (["불고기", "떡볶이", "비빔밥"].includes(food)) {
+    // 파라미터 food 배열 안에 있으면
+    return true;
+  }
+  return false;
+}
+
+const food1 = isKoreanFood("불고기");
+const food2 = isKoreanFood("탕수육");
+// console.log(food1);
+// console.log(food2);
+
+const meal = {
+  한식: "불고기",
+  양식: "파스타",
+  중식: "유산슬",
+  일식: "라멘",
+  인도식: "카레"
+};
+
+const getMeal = (mealType) => {
+  return meal[mealType] || "굶기";
+};
+
+console.log(getMeal("한식"));
+console.log(getMeal("중식"));
+console.log(getMeal());
