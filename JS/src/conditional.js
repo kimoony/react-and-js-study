@@ -54,6 +54,6 @@ const getMeal = (mealType) => {
   return meal[mealType] || "굶기";
 };
 
-console.log(getMeal("한식"));
-console.log(getMeal("중식"));
-console.log(getMeal());
+// console.log(getMeal("한식"));
+// console.log(getMeal("중식"));
+// console.log(getMeal());
