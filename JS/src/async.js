@@ -18,7 +18,7 @@ function taskC(a, cb) {
     cb(res);
   }, 2000);
 }
-console.log("code end");
+// console.log("code end");
 
 // taskA(3, 4, (res) => {
 //   // callback
@@ -36,11 +36,11 @@ console.log("code end");
 // });
 
 taskA(5, 8, (a_res) => {
-  console.log(`A TASK RESULT: ${a_res}`);
+  // console.log(`A TASK RESULT: ${a_res}`);
   taskB(a_res, (b_res) => {
-    console.log(`B TASK RESULT: ${b_res}`);
+    // console.log(`B TASK RESULT: ${b_res}`);
     taskC(b_res, (c_res) => {
-      console.log(`C TASK RESULT: ${c_res}`);
+      // console.log(`C TASK RESULT: ${c_res}`);
     });
   });
 });
