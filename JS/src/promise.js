@@ -78,15 +78,15 @@ function taskC(a) {
 
 taskA(6, 1)
   .then((a_res) => {
-    console.log(`A TASK RESULT: ${a_res}`);
+    // console.log(`A TASK RESULT: ${a_res}`);
     return taskB(a_res);
   })
   .then((b_res) => {
-    console.log(`B TASK RESULT: ${b_res}`);
+    // console.log(`B TASK RESULT: ${b_res}`);
     return taskC(b_res);
   })
   .then((c_res) => {
-    console.log(`C TASK RESULT: ${c_res}`);
+    // console.log(`C TASK RESULT: ${c_res}`);
   });
 
 // taskA(10, 10, (a_res) => {
@@ -98,5 +98,3 @@ taskA(6, 1)
 //     });
 //   });
 // });
-
-//
